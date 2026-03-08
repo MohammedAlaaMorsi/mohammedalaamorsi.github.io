@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mohammed Alaa Morsi</title>
+    <meta name="description" content="Get in touch with Mohammed Alaa Morsi.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">MAM<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link nav-btn active">Contact Me</a>
+            </div>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="reveal">
+            <h1 class="page-title">Let's <span class="gradient-text">Connect</span></h1>
+            <p class="page-subtitle">I'm always open to discussing new opportunities, creative ideas, or visions to be part of.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out via email or connect with me on LinkedIn.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="icon-box-small"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Cairo, Egypt</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box-small"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h5>Email</h5>
+                                <p><a href="mailto:mohammedalaa545@gmail.com">mohammedalaa545@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box-small"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p><a href="tel:+201019075673">+20 1019075673</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <p>Follow Me:</p>
+                        <div class="links">
+                            <a href="https://linkedin.com/in/mohammedalaamorsi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/mohammedalaamorsi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-card">
+                    <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('In a real environment, this form would send a message! Please use my email or LinkedIn to reach out directly.');">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hello Mohammed, I would like to..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Mohammed Alaa Morsi. Built with passion.</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/mohammedalaamorsi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/mohammedalaamorsi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:mohammedalaa545@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
